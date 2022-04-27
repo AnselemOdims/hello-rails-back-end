@@ -301,3 +301,31 @@ Processing by V1::GreetingsController#index as JSON
 Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 4.2ms | Allocations: 1357)
 
 
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:13:42 +0100
+  
+SyntaxError (/home/anselemcodes/Documents/hello-rails-back-end/app/controllers/v1/greetings_controller.rb:3: syntax error, unexpected '}', expecting =>
+...json: { Greeting.random_value }
+...                              ^
+):
+  
+app/controllers/v1/greetings_controller.rb:3: syntax error, unexpected '}', expecting =>
+app/controllers/v1/greetings_controller.rb:3: syntax error, unexpected '}', expecting =>
+app/controllers/v1/greetings_controller.rb:3: syntax error, unexpected '}', expecting =>
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:14:50 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (1.0ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 27ms (Views: 0.9ms | ActiveRecord: 6.5ms | Allocations: 3838)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:15:48 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (0.4ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 42ms (Views: 0.3ms | ActiveRecord: 4.5ms | Allocations: 3696)
+
+
