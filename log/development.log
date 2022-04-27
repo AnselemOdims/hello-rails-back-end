@@ -142,3 +142,162 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 29ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6748)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-27 16:59:32 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anselemcodes/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anselemcodes/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 405)
+Completed 200 OK in 5ms (Views: 3.9ms | Allocations: 1415)
+
+
+Started GET "/greetings" for 127.0.0.1 at 2022-04-27 16:59:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/greetings"):
+  
+Started GET "/greetings" for 127.0.0.1 at 2022-04-27 17:00:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/greetings"):
+  
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:00:16 +0100
+  
+Zeitwerk::NameError (expected file /home/anselemcodes/Documents/hello-rails-back-end/app/controllers/v1/greetings_controller.rb to define constant V1::GreetingsController, but didn't):
+  
+zeitwerk (2.5.4) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.5.4) lib/zeitwerk/kernel.rb:28:in `require'
+activesupport (7.0.2.4) lib/active_support/inflector/methods.rb:280:in `const_get'
+activesupport (7.0.2.4) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (7.0.2.4) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.2.4) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.2.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.2.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.2.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.2.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.2.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.2.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.4) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:00:50 +0100
+Processing by V1::GreetingsController#index as JSON
+Completed 200 OK in 2ms (Views: 0.6ms | Allocations: 331)
+
+
+Started GET "/greetings" for 127.0.0.1 at 2022-04-27 17:03:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/greetings"):
+  
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:03:29 +0100
+Processing by V1::GreetingsController#index as JSON
+Completed 200 OK in 2ms (Views: 0.4ms | Allocations: 162)
+
+
+  [1m[35m (36.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7330925153597262945)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGreetings (20220427160351)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "greetings" ("id" bigserial primary key, "message" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220427160351"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-04-27 16:06:26.913844"], ["updated_at", "2022-04-27 16:06:26.913844"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7330925153597262945)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (1.8ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "This is the first"], ["created_at", "2022-04-27 16:07:25.283015"], ["updated_at", "2022-04-27 16:07:25.283015"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (1.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "This is the second"], ["created_at", "2022-04-27 16:07:32.898078"], ["updated_at", "2022-04-27 16:07:32.898078"]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (2.0ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "This is the third"], ["created_at", "2022-04-27 16:07:41.725281"], ["updated_at", "2022-04-27 16:07:41.725281"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (5.9ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "This is the fourth"], ["created_at", "2022-04-27 16:07:47.776440"], ["updated_at", "2022-04-27 16:07:47.776440"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mGreeting Create (1.6ms)[0m  [1m[32mINSERT INTO "greetings" ("message", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["message", "This is the fifth"], ["created_at", "2022-04-27 16:07:52.526307"], ["updated_at", "2022-04-27 16:07:52.526307"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:08:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (1.2ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 36ms (Views: 1.1ms | ActiveRecord: 9.6ms | Allocations: 7603)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:08:32 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (0.6ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 2.4ms | Allocations: 1478)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:08:35 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (0.7ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 3]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 1.5ms | Allocations: 1354)
+
+
+Started GET "/v1/greetings" for 127.0.0.1 at 2022-04-27 17:08:38 +0100
+Processing by V1::GreetingsController#index as JSON
+  [1m[36mGreeting Count (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "greetings"[0m
+  ↳ app/models/greeting.rb:3:in `random_value'
+  [1m[36mGreeting Load (1.0ms)[0m  [1m[34mSELECT "greetings".* FROM "greetings" ORDER BY "greetings"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  ↳ app/models/greeting.rb:4:in `random_value'
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 4.2ms | Allocations: 1357)
+
+
